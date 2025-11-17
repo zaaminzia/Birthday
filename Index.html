@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/confetti.js"></script>
+    <script src="components/card.js"></script>
+    <script src="components/photo-gallery.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap');
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-500 via-purple-500 to-blue-500 min-h-screen">
+    <main class="container mx-auto px-4 py-10">
+        <birthday-confetti></birthday-confetti>
+        
+        <div class="max-w-4xl mx-auto text-center mb-12">
+    <h1 class="font-dancing text-6xl md:text-8xl text-white mb-6 animate-bounce">Happy Birthday Inaaya!</h1>
+<p class="text-xl text-white opacity-90 mb-8">Scroll down for your surprise 🎁</p>
+            <i data-feather="chevrons-down" class="text-white animate-pulse mx-auto"></i>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-3xl p-8 shadow-xl transform transition hover:scale-105">
+                <i data-feather="gift" class="text-white w-12 h-12 mb-4 mx-auto"></i>
+                <h3 class="text-white text-2xl font-bold mb-3">Special Day</h3>
+                <p class="text-white opacity-90">Today is all about celebrating you and the amazing person you are!</p>
+            </div>
+            <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-3xl p-8 shadow-xl transform transition hover:scale-105">
+                <i data-feather="heart" class="text-white w-12 h-12 mb-4 mx-auto"></i>
+                <h3 class="text-white text-2xl font-bold mb-3">Warm Wishes</h3>
+                <p class="text-white opacity-90">May your year be filled with joy, laughter, and wonderful memories.</p>
+            </div>
+            <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-3xl p-8 shadow-xl transform transition hover:scale-105">
+                <i data-feather="star" class="text-white w-12 h-12 mb-4 mx-auto"></i>
+                <h3 class="text-white text-2xl font-bold mb-3">Bright Future</h3>
+                <p class="text-white opacity-90">Wishing you success and happiness in all your future adventures!</p>
+            </div>
+        </div>
+
+        <birthday-card></birthday-card>
+
+        <div class="mt-20 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-3xl p-8 md:p-12 max-w-3xl mx-auto text-center">
+            <i data-feather="message-circle" class="text-white w-12 h-12 mb-6 mx-auto"></i>
+            <h3 class="text-white text-3xl font-bold mb-6">Personal Message</h3>
+            <p class="text-white text-lg mb-6">Dear Inaaya ,</p>
+            <p class="text-white text-lg mb-6">Happy birthday! I am really glad our paths crossed— I hope today brings you all the joy you bring to everyone around you!</p>
+            <p class="text-white text-lg mb-8">Wishing you a birthday as wonderful and bright as your smile and I wish you an incredible year ahead!</p>
+            <p class="text-white text-xl font-dancing">With love,</p>
+            <p class="text-white text-xl font-dancing">Zaamin</p>
+        </div>
+    </main>
+
+    <footer class="py-8 text-center text-white opacity-80">
+        <p>Made with ❤️ for your special day</p>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
